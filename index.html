@@ -14,7 +14,7 @@
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Đảm bảo nội dung bắt đầu từ trên cùng */
+            align-items: flex-start;
             overflow-x: hidden;
             overflow-y: auto;
         }
@@ -24,7 +24,6 @@
             max-width: 800px;
             min-height: 100vh;
             position: relative;
-            overflow: hidden;
         }
 
         .panel {
@@ -52,6 +51,7 @@
 
         .active {
             transform: translateY(0);
+            z-index: 1;
         }
 
         .swipe-instruction {
@@ -271,4 +271,4 @@
         });
     </script>
 </body>
-</html>
+                </html>
